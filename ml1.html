@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Machine Learning Basics - Course</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      :root {
+        --color-bg: #1f2038;
+        --color-bg-variant: #2d3c7ad2;
+        --color-primary: #4d7aff;
+        --color-primary-variant: rgba(77, 127, 255, 0.393);
+        --color-white: #fff;
+        --color-light: rgba(255, 255, 255, 0.6);
+        --transition: all 400ms ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: var(--color-bg);
+        color: var(--color-white);
+        line-height: 1.7;
+        background-image: url(assets/bg-texture.png);
+        min-height: 100vh;
+      }
+
+      .hero-section {
+        background: var(--color-bg-variant);
+        padding: 4rem 2rem;
+        border-radius: 0 0 2rem 2rem;
+        margin-bottom: 4rem;
+        animation: fadeIn 1s forwards;
+      }
+
+      .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .cloud-icon {
+        max-width: 80px;
+        margin-bottom: 2rem;
+        filter: brightness(0) invert(1);
+        animation: bounce 2s infinite;
+      }
+
+      .ml-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+      }
+
+      .ml-card {
+        background: var(--color-bg-variant);
+        padding: 2rem;
+        border-radius: 1rem;
+        border: 1px solid transparent;
+        transition: var(--transition);
+      }
+
+      .ml-card:hover {
+        background: transparent;
+        border-color: var(--color-primary-variant);
+        transform: translateY(-5px);
+      }
+
+      .btn-ml {
+        width: 100%;
+        background: var(--color-primary);
+        color: var(--color-white);
+        padding: 1rem;
+        border-radius: 0.4rem;
+        border: 1px solid var(--color-primary);
+        transition: var(--transition);
+        font-size: 1rem;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      .btn-ml:hover {
+        background: var(--color-white);
+        color: var(--color-bg);
+        border-color: transparent;
+      }
+
+      .card-title {
+        color: var(--color-primary);
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+
+      .subtitle {
+        color: var(--color-light);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .hero-section {
+          padding: 2rem 1rem;
+        }
+
+        .ml-grid {
+          padding: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero-section text-center animate__animated animate__fadeIn">
+      <div class="hero-content">
+        <img
+          src="assets/images/cloud.png"
+          alt="Cloud Icon"
+          class="cloud-icon"
+        />
+        <h1>Machine Learning Basics</h1>
+        <p class="subtitle">
+          Explore the fundamentals of machine learning through interactive
+          resources and practical examples
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="ml-grid animate__animated animate__fadeInUp">
+        <div class="ml-card">
+          <h3 class="card-title">Understanding ML</h3>
+          <a
+            href="https://www.reddit.com/r/explainlikeimfive/comments/4v3u4l/eli5_what_is_machine_learning/"
+            class="btn-ml"
+          >
+            What is Machine Learning?
+          </a>
+          <a
+            href="https://www.expertsystem.com/machine-learning-definition/"
+            class="btn-ml"
+          >
+            ML Fundamentals
+          </a>
+        </div>
+
+        <div class="ml-card">
+          <h3 class="card-title">Learning Types</h3>
+          <a
+            href="https://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/"
+            class="btn-ml"
+          >
+            Supervised vs Unsupervised
+          </a>
+          <a
+            href="https://searchenterpriseai.techtarget.com/definition/supervised-learnings"
+            class="btn-ml"
+          >
+            Deep Dive: Supervised Learning
+          </a>
+        </div>
+
+        <div class="ml-card">
+          <h3 class="card-title">Practical ML</h3>
+          <a
+            href="https://stackoverflow.com/questions/26182980/can-anyone-give-a-real-life-example-of-supervised-learning-and-unsupervised-lear"
+            class="btn-ml"
+          >
+            Real-world Examples
+          </a>
+          <a
+            href="https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=gauss&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.90290&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false"
+            class="btn-ml"
+          >
+            TensorFlow Playground
+          </a>
+          <a href="https://teachablemachine.withgoogle.com/" class="btn-ml">
+            Teachable Machine
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

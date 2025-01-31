@@ -1,0 +1,86 @@
+
+
+.guidelines-bg {
+    background-color: white;
+}
+/*--- left part css start -------*/
+.guidelines-left-div{
+    text-align: center;
+    border-top: 640px solid #286090;
+    border-right:  150px solid transparent;
+    color: white;
+}
+.guidelines-left-div>h1{
+margin-bottom: 10px;
+    margin-top: 10px;
+}
+.inside-left-guidelines-div {
+position: absolute;
+    left: 135px;
+    top: -500px;
+}
+
+/*----left part css ends----*/
+/*----right part css starts----*/
+.guidelines-right-div{
+    text-align: center;
+    margin-top: 16px;
+}
+.inside-right-guidelines-div {
+    margin-top:14px;
+}
+/*--------css for download part inside right part of guidelines start-------*/
+.guidelines-download-button{
+    margin-top: 25px;
+    color:white;    
+    background-color: #286090 ;
+        padding-left: 30px !important;
+    border-radius: 10px !important;
+    padding-right: 30px !important;
+
+
+}
+.guidelines-download-button>img{
+    margin-bottom: 2px;
+}
+
+.a
+{
+    background-color: blue!important ;
+}
+
+/*---------css for download part inside right part of guidelines end------------*/
+/*------right part css ends---------*/
+/*-------media query starts---------*/
+@media only screen and (max-width: 767px){
+/*------media query for left part start--------*/
+.guidelines-left-div{
+    background-color: #3a7fbe;
+    color: white;
+    border:0;
+    text-align: center;
+}
+.guidelines-left-div>h4{
+    font-size: 15px;
+}
+
+.inside-left-guidelines-div {
+    position: inherit;
+    left: 0px;
+    top:0px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+/*----------media query for left part end---------*/
+/*----------media query for right part starts------*/
+.inside-right-guidelines-div {
+    margin-top: 70px;
+}
+.skew-left-guidelines-div>h1{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 30px;
+}
+/*---------media query for right part end--------*/
+}
+/*---------media query end------------------------*/
